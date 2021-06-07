@@ -1,0 +1,20 @@
+[
+    {
+        "name": "IBM",
+        "symbol": "IBM",
+        "currentPrice": 147,
+        "lastPrice": 145
+    },
+    {
+        "name": "Shopify",
+        "symbol": "SHOP",
+        "currentPrice": 1457,
+        "lastPrice": 1451
+    },
+    {
+        "name": "AMC",
+        "symbol": "AMC",
+        "currentPrice": 51,
+        "lastPrice": 60
+    }
+]

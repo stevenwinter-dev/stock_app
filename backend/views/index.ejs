@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../views/partials/head.ejs'); %>
+</head>
+<body>
+<header>
+  <%- include('../views/partials/header.ejs'); %>
+</header>
+<main>
+    <div class='index-bg show_bg_2'></div>
+    <div class="card-container">
+    <% stocks.forEach(stock => { %>
+        <div class='card light-blue darken-4 z-depth-3 stock-card'>
+            <div class="card-content white-text">
+                <h3 class='card-title'><%= stock.name %></h3>
+                <div class='stock-content'>
+                    <div>
+                <p>Symbol: <%= stock.symbol %></p>
+                <p> Current Price: $<%= stock.currentPrice %></p>
+                <p>Yesterday's Price: $<%= stock.lastPrice %></p>
+                <ul class="collapsible">
+                    <li>
+                <div class="collapsible-header light-blue darken-4 stock-collapse"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>  
+                        </ul>   
+            </div>
+                <p class='trend'>
+                    <%if (stock.currentPrice > stock.lastPrice) { %>
+                        <i class="large material-icons green accent-3 z-depth-3">arrow_upward</i>
+                    <% } else { %>
+                        <i class="large material-icons  red accent-3 z-depth-3">arrow_downward</i>
+                   <% }%>
+                </p>
+            </div>
+            </div>
+        </div>
+    <% }) %>
+</div>
+</main>
+<footer>
+  <%- include('../views/partials/footer.ejs'); %>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>
