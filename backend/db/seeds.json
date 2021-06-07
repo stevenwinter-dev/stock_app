@@ -3,18 +3,31 @@
         "name": "IBM",
         "symbol": "IBM",
         "currentPrice": 147,
-        "lastPrice": 145
+        "lastPrice": 145,
+        "2day": 144,
+        "3day": 150,
+        "4day": 139,
+        "5day": 146
     },
     {
         "name": "Shopify",
         "symbol": "SHOP",
         "currentPrice": 1457,
-        "lastPrice": 1451
+        "lastPrice": 1451,
+        "2day": 1448,
+        "3day": 1450,
+        "4day": 1451,
+        "5day": 1453
     },
     {
         "name": "AMC",
         "symbol": "AMC",
         "currentPrice": 51,
-        "lastPrice": 60
+        "lastPrice": 60,
+        "2day": 65,
+        "3day": 68,
+        "4day": 70,
+        "5day": 75
     }
 ]
+
